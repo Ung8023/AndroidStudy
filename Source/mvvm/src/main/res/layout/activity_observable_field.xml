@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    
+    <data>
+        <import type="cn.ung8023.mvvm.data.observablefield.UserInfo"/>
+        <import type="android.databinding.ObservableArrayList"/>
+        <variable
+            name="userInfo"
+            type="UserInfo"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="cn.ung8023.mvvm.data.observablefield.ObservableFieldActivity">
+        <Button
+            android:onClick="before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十年前"
+            />
+
+        <Button
+            android:onClick="last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十年后"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`firstName：` + userInfo.firstName.get()}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`lastName:` + userInfo.lastName.get()}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`是不是超人:` + String.valueOf(userInfo.isSuperMan)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`写了几本书:` + String.valueOf(userInfo.bookNum)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`有多少粉丝:` + String.valueOf(userInfo.bookFans)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`多大岁数:` + String.valueOf(userInfo.age)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`有多少零钱:` + String.valueOf(userInfo.money)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`性别:` + String.valueOf(userInfo.sex)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`银行有多少钱:` + String.valueOf(userInfo.bankMoney)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`不知道的钱有多少:` + String.valueOf(userInfo.dkMoney)}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`第一个孩子叫啥:` + String.valueOf(userInfo.children[0])}"
+            />
+
+    </LinearLayout>
+</layout>
+

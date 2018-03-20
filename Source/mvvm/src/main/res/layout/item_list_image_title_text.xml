@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="user"
+            type="cn.ung8023.mvvm.data.observableclass.UserEntity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:loadImage="@{user.imageUrl}"
+            />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="10dp"
+            android:text="@{user.title}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconIv"
+            app:layout_constraintTop_toTopOf="@id/iconIv" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:text="@{user.des}"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/iconIv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconIv"
+            app:layout_constraintTop_toBottomOf="@id/titleTv"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+</layout>

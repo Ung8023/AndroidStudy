@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="user"
+            type="cn.ung8023.mvvm.data.observableclass.UserEntity"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="cn.ung8023.mvvm.data.observableclass.ObservableClassActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:onClick="setImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="setImage"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:onClick="setTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="setTitle"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:onClick="setDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="setDes"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:onClick="setAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="setAll"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+        <Button
+            android:onClick="reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:textAllCaps="false"
+            />
+
+        <include layout="@layout/item_list_image_title_text" app:user="@{user}"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,11 @@
+"http://img5.imgtn.bdimg.com/it/u=1893461451,2619342480&fm=27&gp=0.jpg", "AAAAAAAAAAAAAAAAAAA", "aaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaa"
+        data.add(new UserListEntity("http://img3.imgtn.bdimg.com/it/u=1553543711,3678814520&fm=27&gp=0.jpg", "BBBBBBBBBBBBBBBBBBB", "bbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbb"));
+        data.add(new UserListEntity("http://img1.imgtn.bdimg.com/it/u=1794894692,1423685501&fm=27&gp=0.jpg", "CCCCCCCCCCCCCCCCCCC", "cccccccccccccccccccc\ncccccccccccccccccc"));
+        data.add(new UserListEntity("http://img3.imgtn.bdimg.com/it/u=1853920800,3896119207&fm=27&gp=0.jpg", "DDDDDDDDDDDDDDDDDDD", "dddddddddddddddddddd\ndddddddddddddddddd"));
+        data.add(new UserListEntity("http://img5.imgtn.bdimg.com/it/u=731019747,1287543710&fm=27&gp=0.jpg", "EEEEEEEEEEEEEEEEEEE", "eeeeeeeeeeeeeeeeeeee\neeeeeeeeeeeeeeeeee"));
+        data.add(new UserListEntity("http://img4.imgtn.bdimg.com/it/u=1590736614,1368131788&fm=27&gp=0.jpg", "FFFFFFFFFFFFFFFFFF", "ffffffffffffffffffff\nffffffffffffffffff"));
+        data.add(new UserListEntity("http://img5.imgtn.bdimg.com/it/u=2400794111,1378412460&fm=27&gp=0.jpg", "GGGGGGGGGGGGGGGGGG", "gggggggggggggggggggg\ngggggggggggggggggg"));
+        data.add(new UserListEntity("http://img3.imgtn.bdimg.com/it/u=1553543711,3678814520&fm=27&gp=0.jpg", "HHHHHHHHHHHHHHHHHH", "hhhhhhhhhhhhhhhhhhhh\nhhhhhhhhhhhhhhhhhh"));
+        data.add(new UserListEntity("http://img4.imgtn.bdimg.com/it/u=3436655694,1661574884&fm=27&gp=0.jpg", "IIIIIIIIIIIIIIIIII", "iiiiiiiiiiiiiiiiiiii\niiiiiiiiiiiiiiiiii"));
+        data.add(new UserListEntity("http://img5.imgtn.bdimg.com/it/u=4054007864,2464688467&fm=27&gp=0.jpg", "JJJJJJJJJJJJJJJJJJ", "jjjjjjjjjjjjjjjjjjjj\njjjjjjjjjjjjjjjjjjj"));
+        data.add(new UserListEntity("http://img4.imgtn.bdimg.com/it/u=242354780,308135522&fm=27&gp=0.jpg", "KKKKKKKKKKKKKKKKKKKKK", "kkkkkkkkkkkkkkkkkkkk\nkkkkkkkkkkkkkkkkkk"));
