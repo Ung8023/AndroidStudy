@@ -1,6 +1,7 @@
 package cn.ung8023.mvvm.data.observablefield;
 
 import android.databinding.ObservableArrayList;
+import android.databinding.ObservableArrayMap;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableByte;
 import android.databinding.ObservableChar;
@@ -9,6 +10,7 @@ import android.databinding.ObservableField;
 import android.databinding.ObservableFloat;
 import android.databinding.ObservableInt;
 import android.databinding.ObservableLong;
+import android.databinding.ObservableMap;
 import android.databinding.ObservableShort;
 
 /**
@@ -31,5 +33,7 @@ public class UserInfo {
     public final ObservableDouble dkMoney = new ObservableDouble();
 
     public final ObservableArrayList<String> children = new ObservableArrayList<>();
+    public final ObservableMap<String, Integer> map = new ObservableArrayMap();
+
 
 }
