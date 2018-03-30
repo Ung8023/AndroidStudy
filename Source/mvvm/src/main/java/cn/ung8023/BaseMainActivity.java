@@ -1,28 +1,20 @@
-package cn.ung8023.mvvm.main;
+package cn.ung8023;
 
 import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import cn.ung8023.androidstudy.base.ListActivity;
 import cn.ung8023.androidstudy.base.ListItemViewHolder;
-import cn.ung8023.mvvm.data.observableclass.ObservableClassActivity;
-import cn.ung8023.mvvm.data.observablefield.ObservableFieldActivity;
+import cn.ung8023.mvvm.main.ActivityEntity;
 
-public class MainActivity extends ListActivity<ActivityEntity> {
+/**
+ * @author feilang-liuyansong
+ * @date 2018/3/29 15:42
+ * @description
+ */
 
-    @Override
-    protected List<ActivityEntity> getData() {
-        return new ArrayList<ActivityEntity>(){
-            {
-                add(new ActivityEntity("ObservableClass", ObservableClassActivity.class));
-                add(new ActivityEntity("ObservableFields", ObservableFieldActivity.class));
-            }
-        };
-    }
+public abstract class BaseMainActivity extends ListActivity<ActivityEntity> {
 
     @Override
     protected void bindData(ListItemViewHolder viewHolder, final ActivityEntity activityEntity, int position) {
