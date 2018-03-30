@@ -3,7 +3,8 @@ package cn.ung8023.mvvm.main;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.ung8023.BaseMainActivity;
+import cn.ung8023.androidstudy.activity.BaseMainActivity;
+import cn.ung8023.androidstudy.activity.ActivityEntity;
 import cn.ung8023.mvvm.data.observableclass.ObservableClassActivity;
 import cn.ung8023.mvvm.data.observablefield.ObservableFieldActivity;
 

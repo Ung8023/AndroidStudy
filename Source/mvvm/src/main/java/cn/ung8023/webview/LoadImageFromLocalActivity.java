@@ -47,12 +47,6 @@ public class LoadImageFromLocalActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        webView.onResume();
-    }
-
     public class MyChromeClient extends WebChromeClient {
         // For Android < 3.0
         public void openFileChooser(ValueCallback<Uri> valueCallback) {
@@ -142,6 +136,25 @@ public class LoadImageFromLocalActivity extends AppCompatActivity {
         }
         uploadMessageAboveL.onReceiveValue(results);
         uploadMessageAboveL = null;
+    }
+
+    // life circles ----------------------------------
+    @Override
+    protected void onResume() {
+        super.onResume();
+        webView.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        webView.onPause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        webView.destroy();
+        super.onDestroy();
     }
 }
 

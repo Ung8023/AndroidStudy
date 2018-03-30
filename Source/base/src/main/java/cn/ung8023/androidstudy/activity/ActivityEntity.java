@@ -1,4 +1,4 @@
-package cn.ung8023.mvvm.main;
+package cn.ung8023.androidstudy.activity;
 
 /**
  * @author feilang-liuyansong

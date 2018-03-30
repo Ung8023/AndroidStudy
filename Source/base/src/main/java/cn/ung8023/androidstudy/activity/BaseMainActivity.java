@@ -1,4 +1,4 @@
-package cn.ung8023;
+package cn.ung8023.androidstudy.activity;
 
 import android.content.Intent;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import cn.ung8023.androidstudy.base.ListActivity;
 import cn.ung8023.androidstudy.base.ListItemViewHolder;
-import cn.ung8023.mvvm.main.ActivityEntity;
+import cn.ung8023.androidstudy.activity.ActivityEntity;
 
 /**
  * @author feilang-liuyansong
