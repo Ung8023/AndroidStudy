@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidBase</string>
+    <string name="show_progress_dialog">showProgressDialog</string>
 </resources>

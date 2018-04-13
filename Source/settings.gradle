@@ -1,1 +1,1 @@
-include ':base', ':mvvm', ':androidbase'
+include ':base', ':mvvm', ':androidbase', ':codetemplet'
