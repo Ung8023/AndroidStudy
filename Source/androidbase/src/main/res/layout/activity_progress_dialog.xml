@@ -13,4 +13,11 @@
         android:text="@string/show_progress_dialog"
         android:textAllCaps="false"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showProgressOnDocerView"
+        android:text="@string/show_progressbar_on_docerview"
+        android:textAllCaps="false"
+        />
 </LinearLayout>

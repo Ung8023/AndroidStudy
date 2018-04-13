@@ -24,6 +24,10 @@ public class ProgressDialogActivity extends AppCompatActivity {
          progressDialog.show();
     }
 
+    public void showProgressOnDocerView(View view) {
+        progressDialog.show();
+    }
+
     @Override
     public void onBackPressed() {
         progressDialog.dismiss();
