@@ -1,0 +1,36 @@
+ext {
+
+    //Android
+    androidBuildToolsVersion = "26.0.2"
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 26
+
+    //Android Libraries
+    supportVersion = "26.1.0"
+    constraintLayoutVersion = "1.1.0"
+    junitVersion = "4.12"
+    testRunnerVersion = "1.0.1"
+    testEspressoCoreVersion = "3.0.1"
+    testMockitoVersion = "+"
+
+    //3rd Libraries
+    avLoadingIndicatorViewVersion = "2.1.3"
+    retrofitVersion = '2.4.0'
+
+
+    app = [
+            supportV7                    : "com.android.support:appcompat-v7:${supportVersion}",
+            constraintLayout             : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            avLoadingIndicatorView       : "com.wang.avi:library:${avLoadingIndicatorViewVersion}",
+            junit                        : "junit:junit:${junitVersion}",
+            testRunner                   : "com.android.support.test:runner:${testRunnerVersion}",
+            testEspressoCore             : "com.android.support.test.espresso:espresso-core:${testEspressoCoreVersion}",
+            testMockito                  : "org.mockito:mockito-core:${testMockitoVersion}",
+
+            retrofit                     : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGsonConverter        : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitScalarsConverter     : "com.squareup.retrofit2:converter-scalars:${retrofitVersion}",
+    ]
+
+}

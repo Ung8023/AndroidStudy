@@ -24,7 +24,7 @@ public class CodeArea {
     // implement Constructors here
 
     // ------------------------------------------------------------------
-    // Lifecyle methods
+    // Lifecycle methods
     // ------------------------------------------------------------------
 
     // write lifecycle methods here

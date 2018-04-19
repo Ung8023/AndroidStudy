@@ -7,7 +7,7 @@ import cn.ung8023.androidstudy.activity.ActivityEntity;
 import cn.ung8023.androidstudy.activity.BaseMainActivity;
 
 /**
- * @author feilang-liuyansong
+ * @author Ung
  * @date 2018/4/13 22:07
  * @description
  */

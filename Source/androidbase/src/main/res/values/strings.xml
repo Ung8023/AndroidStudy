@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">AndroidBase</string>
     <string name="show_progress_dialog">showProgressDialog</string>
-    <string name="show_progressbar_on_docerview">showProgressBarOnDocerView</string>
+    <string name="show_progressbar_on_decor_view">showProgressOnDecorView</string>
+    <string name="show_progress_av">showProgressAV</string>
+    <string name="btn_remove_child">移除直接子View</string>
+    <string name="btn_remove_grand_son">移除孙子View</string>
+    <string name="btn_remove_grand_grand_son">移除最内层View</string>
+    <string name="son">儿子</string>
+    <string name="grand_son">孙子</string>
+    <string name="grand_grand_son">重孙子</string>
 </resources>

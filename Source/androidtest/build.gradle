@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId "com.androidaddicts.androidtest"
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def androidBase = rootProject.ext.app
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation androidBase.junit
+    testImplementation androidBase.testMockito
+    androidTestImplementation androidBase.testRunner
+    androidTestImplementation androidBase.testEspressoCore
+
+    implementation androidBase.supportV7
+    implementation androidBase.constraintLayout
+}

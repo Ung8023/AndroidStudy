@@ -16,8 +16,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="showProgressOnDocerView"
-        android:text="@string/show_progressbar_on_docerview"
+        android:onClick="showProgressOnDecorView"
+        android:text="@string/show_progressbar_on_decor_view"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showProgressAV"
+        android:text="@string/show_progress_av"
         android:textAllCaps="false"
         />
 </LinearLayout>
