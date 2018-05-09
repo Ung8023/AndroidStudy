@@ -16,6 +16,7 @@ public class ViewActivity extends BaseMainActivity {
         return new ArrayList<ActivityEntity>(){
             {
                 add(new ActivityEntity("移除View", RemoveViewActivity.class));
+                add(new ActivityEntity("TextView显示链接", TextViewActivity.class));
             }
         };
     }

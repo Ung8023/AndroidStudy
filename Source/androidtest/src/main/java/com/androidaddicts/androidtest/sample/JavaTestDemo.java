@@ -1,7 +1,6 @@
 package com.androidaddicts.androidtest.sample;
 
 /**
- * @author feilang-liuyansong
  * @date 2018/4/17 13:30
  * @description
  */

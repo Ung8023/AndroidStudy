@@ -3,7 +3,6 @@ package cn.ung8023.mvvm.data.observableclass;
 import android.databinding.BindingAdapter;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 
 /**
  * @author feilang-liuyansong
@@ -14,7 +13,6 @@ import com.bumptech.glide.Glide;
 public class ImageBindAdapter {
     @BindingAdapter("loadImage")
     public static void loadInternetImage(ImageView iv, String imageUrl) {
-        Glide.with(iv).load(imageUrl).into(iv);
     }
 
 }

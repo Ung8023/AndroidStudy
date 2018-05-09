@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        applicationId "com.androidaddicts.opengl"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    def androidBase = rootProject.ext.app
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    compile project(':base')
+
+    testImplementation androidBase.junit
+    androidTestImplementation androidBase.testRunner
+    androidTestImplementation androidBase.testEspressoCore
+
+    implementation androidBase.supportV7
+    implementation androidBase.constraintLayout
+    implementation androidBase.avLoadingIndicatorView
+}

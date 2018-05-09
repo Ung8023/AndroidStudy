@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ung8023.androidbase.view.TextViewActivity">
+
+    <TextView
+        android:id="@+id/tv_movement_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:textColorLink="@android:color/holo_blue_dark"
+        />
+
+    <TextView
+        android:id="@+id/tv_auto_link"
+        android:autoLink="web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        />
+
+</LinearLayout>

@@ -9,4 +9,6 @@
     <string name="son">儿子</string>
     <string name="grand_son">孙子</string>
     <string name="grand_grand_son">重孙子</string>
+
+    <string name="sapmle_url">aAAAAAAAAAAAAAAA 343-1232342-2424 <a href="http://www.baidu.com asdasdasdasd">这是一个字符串</a></string>
 </resources>
