@@ -1,1 +1,1 @@
-include ':base', ':mvvm', ':androidbase', ':codetemplet', ':androidtest', ':javabase', ':androidnet', ':opengl'
+include ':base', ':mvvm', ':androidbase', ':codetemplet', ':androidtest', ':javabase', ':androidnet', ':opengl', ':things'

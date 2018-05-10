@@ -32,10 +32,23 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/select_device"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".foundation.openglbase.OpenGlBaseActivity" />
-        <activity android:name=".foundation.openglbase.triangle.OpenglTriangleActivity" />
-        <activity android:name=".foundation.openglbase.proj.ortho.OrthogonalProjectionActivity" />
-        <activity android:name=".foundation.openglbase.proj.MainProjectionActivity"></activity>
+        <activity
+            android:name=".foundation.openglbase.OpenGlBaseActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".foundation.openglbase.triangle.OpenglTriangleActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".foundation.openglbase.proj.ortho.OrthogonalProjectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".foundation.openglbase.proj.frustum.FrustumProjectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".foundation.openglbase.proj.MainProjectionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".foundation.openglbase.transform.translate.TranslateActivity"/>
+        <activity android:name=".foundation.openglbase.transform.TransformMainActivity"/>
     </application>
 
 </manifest>

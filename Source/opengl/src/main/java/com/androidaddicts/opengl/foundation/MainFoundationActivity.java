@@ -5,6 +5,7 @@ import com.androidaddicts.opengl.foundation.music.MainMusicActivity;
 import com.androidaddicts.opengl.foundation.dataexchange.MainSocketActivity;
 import com.androidaddicts.opengl.foundation.openglbase.OpenGlBaseActivity;
 import com.androidaddicts.opengl.foundation.openglbase.proj.MainProjectionActivity;
+import com.androidaddicts.opengl.foundation.openglbase.transform.TransformMainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,7 @@ public class MainFoundationActivity extends BaseMainActivity {
                 add(new ActivityEntity("Socket连接", MainSocketActivity.class));
                 add(new ActivityEntity("OpenGl基础", OpenGlBaseActivity.class));
                 add(new ActivityEntity("OpenGl投影", MainProjectionActivity.class));
+                add(new ActivityEntity("OpenGl变换", TransformMainActivity.class));
             }
         };
     }

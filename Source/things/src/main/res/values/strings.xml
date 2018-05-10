@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">things</string>
+    <string name="get_source">获取源码</string>
+</resources>

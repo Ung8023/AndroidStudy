@@ -1,17 +1,17 @@
 ext {
 
     //Android
-    androidBuildToolsVersion = "26.0.2"
+    androidBuildToolsVersion = "27.0.0"
     androidMinSdkVersion = 21
     androidTargetSdkVersion = 26
     androidCompileSdkVersion = 26
 
     //Android Libraries
-    supportVersion = "26.1.0"
+    supportVersion = "27.1.1"
     constraintLayoutVersion = "1.1.0"
     junitVersion = "4.12"
     testRunnerVersion = "1.0.1"
-    testEspressoCoreVersion = "3.0.1"
+    testEspressoCoreVersion = "3.0.2"
     testMockitoVersion = "+"
 
     //3rd Libraries

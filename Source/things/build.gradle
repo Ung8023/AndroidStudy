@@ -1,13 +1,18 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
 android {
-    compileSdkVersion rootProject.ext.androidCompileSdkVersion
-    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+    compileSdkVersion 26
+
+
 
     defaultConfig {
-        applicationId "com.ung8023.androidbase"
-        minSdkVersion rootProject.ext.androidMinSdkVersion
-        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        applicationId "com.androidaddicts.things"
+        minSdkVersion 21
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
@@ -38,4 +43,6 @@ dependencies {
     implementation androidBase.supportV7
     implementation androidBase.constraintLayout
     implementation androidBase.avLoadingIndicatorView
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.kotlin_version}"
 }

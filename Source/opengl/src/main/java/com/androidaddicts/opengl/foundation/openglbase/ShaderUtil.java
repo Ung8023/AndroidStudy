@@ -1,7 +1,6 @@
 package com.androidaddicts.opengl.foundation.openglbase;
 
 /**
- * @author feilang-liuyansong
  * @date 2018/5/8 10:09
  * @description
  */

@@ -3,6 +3,7 @@ package com.androidaddicts.opengl.foundation.openglbase.proj;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.androidaddicts.opengl.foundation.openglbase.proj.frustum.FrustumProjectionActivity;
 import com.androidaddicts.opengl.foundation.openglbase.proj.ortho.OrthogonalProjectionActivity;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class MainProjectionActivity extends BaseMainActivity {
     protected List<ActivityEntity> getData() {
         return new ArrayList<ActivityEntity>() { {
             add(new ActivityEntity("正交投影", OrthogonalProjectionActivity.class));
+            add(new ActivityEntity("透视投影", FrustumProjectionActivity.class));
         }};
     }
 }

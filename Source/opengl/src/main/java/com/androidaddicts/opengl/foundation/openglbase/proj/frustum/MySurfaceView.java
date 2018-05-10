@@ -1,4 +1,4 @@
-package com.androidaddicts.opengl.foundation.openglbase.proj.ortho;
+package com.androidaddicts.opengl.foundation.openglbase.proj.frustum;
 
 import android.content.Context;
 import android.opengl.GLES30;
@@ -69,7 +69,7 @@ public class MySurfaceView extends GLSurfaceView {
             GLES30.glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 
             for (int i = 0; i < ha.length; i ++) {
-                ha[i] = new SixPointedStar(MySurfaceView.this, 0.2f, 0.5f, -0.3f * i);
+                ha[i] = new SixPointedStar(MySurfaceView.this, 0.4f, 1.0f, -1f * i);
             }
 
             GLES30.glEnable(GLES30.GL_DEPTH_TEST);
@@ -81,10 +81,10 @@ public class MySurfaceView extends GLSurfaceView {
 
             float ratio = (float) width / height;
 
-            MatrixState.setProjectOrtho(-ratio, ratio, -1, 1, 1, 10);
+            MatrixState.setProjectFrustum(-ratio * 0.4f, ratio * 0.4f, -1 * 0.4f, 1 * 0.4f, 1, 50);
 
             MatrixState.setCamera(
-              0, 0, 3f,
+              0, 0, 6f,
               0, 0, 0f,
               0f, 1.0f, 0.0f
             );
