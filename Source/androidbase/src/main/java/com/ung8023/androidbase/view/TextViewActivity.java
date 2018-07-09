@@ -1,13 +1,12 @@
 package com.ung8023.androidbase.view;
 
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
+import android.text.InputFilter;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.URLSpan;
 import android.text.util.Linkify;
@@ -33,6 +32,8 @@ public class TextViewActivity extends AppCompatActivity {
     private void initView() {
         initMovementTextView();
         initAutoLinkTextView();
+
+        initMaxLengthTextView();
     }
 
     private Spanned getHtmlStr(String htmlStr) {
@@ -46,9 +47,16 @@ public class TextViewActivity extends AppCompatActivity {
         movementTv.setText(text);
         movementTv.setAutoLinkMask(Linkify.ALL);
         // 通过设置MovementMethod
-        movementTv.setMovementMethod(LinkMovementMethod.getInstance());
+//        movementTv.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
+    private void initMaxLengthTextView() {
+        TextView textView = findViewById(R.id.tv_max_length);
+
+        textView.setFilters(new InputFilter[]{new InputFilter.LengthFilter(14)});
+
+        textView.setText("12345678901234567890");
+    }
 
     private void initAutoLinkTextView() {
         TextView textView = findViewById(R.id.tv_auto_link);

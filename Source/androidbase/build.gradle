@@ -1,5 +1,11 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: "kotlin-kapt"
+
 android {
     compileSdkVersion rootProject.ext.androidCompileSdkVersion
     buildToolsVersion rootProject.ext.androidBuildToolsVersion
@@ -29,13 +35,21 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation "com.android.support:design:${rootProject.ext.supportVersion}"
+    implementation "com.android.support:support-v4:${rootProject.ext.supportVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:support-v4:26.1.0'
     compile project(':base')
 
     testImplementation androidBase.junit
     androidTestImplementation androidBase.testRunner
     androidTestImplementation androidBase.testEspressoCore
 
-    implementation androidBase.supportV7
-    implementation androidBase.constraintLayout
-    implementation androidBase.avLoadingIndicatorView
+    implementation 'com.google.android:flexbox:0.3.0'
+
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportVersion}"
+    implementation "com.android.support.constraint:constraint-layout:${rootProject.ext.constraintLayoutVersion}"
+
+    implementation "com.wang.avi:library:${rootProject.ext.avLoadingIndicatorViewVersion}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }

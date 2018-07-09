@@ -4,12 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-/**
- * @author feilang-liuyansong
- * @date 2018/5/9 09:11
- * @description
- */
-
 public final class TransferUtils {
     private TransferUtils() {
 

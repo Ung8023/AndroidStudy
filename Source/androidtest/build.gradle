@@ -28,10 +28,10 @@ dependencies {
     def androidBase = rootProject.ext.app
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation androidBase.junit
     testImplementation androidBase.testMockito
     androidTestImplementation androidBase.testRunner
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
     androidTestImplementation androidBase.testEspressoCore
 
     implementation androidBase.supportV7

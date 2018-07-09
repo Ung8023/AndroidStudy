@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="all"
+        android:textIsSelectable="true"
         android:textSize="16sp"
         android:padding="16dp"
         android:textColorLink="@android:color/holo_blue_dark"
@@ -20,6 +26,7 @@
     <TextView
         android:id="@+id/tv_auto_link"
         android:autoLink="web"
+        android:textIsSelectable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:linksClickable="true"
@@ -27,4 +34,27 @@
         android:padding="16dp"
         />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:text="设置TextView的MaxLength"
+        />
+
+    <TextView
+        android:id="@+id/tv_max_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:textSize="16sp"
+        android:padding="16dp"
+        />
 </LinearLayout>
+</ScrollView>

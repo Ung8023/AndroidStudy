@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +27,51 @@
         <activity android:name=".dialog.ProgressDialogActivity" />
         <activity android:name=".view.ViewActivity" />
         <activity android:name=".view.RemoveViewActivity" />
-        <activity android:name=".view.TextViewActivity"></activity>
+        <activity android:name=".view.TextViewActivity" />
+        <activity android:name=".activity.ListAboutActivity" />
+        <activity android:name=".activity.config.ConfigActivity" />
+        <activity android:name=".activity.config.Config1Activity" />
+        <activity android:name=".view.FlexBoxActivity" />
+        <activity android:name=".view.RippleActivity" />
+        <activity android:name=".view.SearchViewActivity" />
+        <activity
+            android:name=".activity.launchmode.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.launchmode.BaseLaunchModeActivity" />
+        <activity
+            android:name=".activity.launchmode.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.launchmode.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.launchmode.StandardActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.launchmode.SingleInstance2Activity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".view.IncludeActivity" />
+        <activity android:name=".sys.MainSysActivity" />
+        <activity android:name=".sys.PhoneMessageActivity" />
+        <activity android:name=".sys.SimActivity" />
+        <activity android:name=".view.scroll.ScrollMainActivity" />
+        <activity android:name=".view.scroll.ViewPropActivity" />
+        <activity android:name=".view.define.MeasureActivity" />
+        <activity android:name=".view.define.GetHeightActivity" />
+        <activity android:name=".view.define.GetHeightSampleActivity" />
+        <activity android:name=".view.define.LayoutActivity" />
+        <activity android:name=".view.define.ViewDrawActivity" />
+        <activity
+            android:name=".view.DrawableActivity"
+            android:label="@string/title_activity_drawable"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Fragments -->
+        <activity android:name=".view.fragment.base.StaticFragmentActivity" />
+        <activity android:name=".view.fragment.FragmentMainActivity" />
+        <activity android:name=".view.fragment.base.DynamicActivity" />
+        <activity android:name=".view.fragment.base.PageFragmentActivity" />
+        <activity android:name=".view.ShapeXmlActivity"></activity>
     </application>
 
 </manifest>

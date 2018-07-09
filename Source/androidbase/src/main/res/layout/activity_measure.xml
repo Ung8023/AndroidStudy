@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ung8023.androidbase.view.define.MeasureActivity">
+
+    <com.ung8023.androidbase.view.define.MViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4400ff00"
+        android:tag="VG1"
+        >
+        <com.ung8023.androidbase.view.define.MView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#550000ff"
+            android:tag="V1"/>
+    </com.ung8023.androidbase.view.define.MViewGroup>
+
+    <com.ung8023.androidbase.view.define.MView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="V2"
+        android:background="#44ff0000"
+        />
+
+</android.support.constraint.ConstraintLayout>
