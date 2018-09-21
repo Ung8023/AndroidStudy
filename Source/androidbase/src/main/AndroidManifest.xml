@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
+        android:name=".process.ProcessApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -48,6 +49,9 @@
             android:name=".activity.launchmode.StandardActivity"
             android:launchMode="standard" />
         <activity
+            android:name=".activity.launchmode.StandardTwoActivity"
+            android:launchMode="standard" />
+        <activity
             android:name=".activity.launchmode.SingleInstance2Activity"
             android:launchMode="singleInstance" />
         <activity android:name=".view.IncludeActivity" />
@@ -71,7 +75,53 @@
         <activity android:name=".view.fragment.FragmentMainActivity" />
         <activity android:name=".view.fragment.base.DynamicActivity" />
         <activity android:name=".view.fragment.base.PageFragmentActivity" />
-        <activity android:name=".view.ShapeXmlActivity"></activity>
+        <activity android:name=".view.ShapeXmlActivity" />
+        <!-- TextView -->
+        <activity android:name=".view.text.TextViewMainActivity" />
+        <activity android:name=".view.text.TextViewUrlActivity" />
+        <activity android:name=".view.text.TextViewWithOutPaddingActivity" />
+        <activity android:name=".dialog.DateTimeDialogActivity" />
+        <activity android:name=".locale.LocaleMainActivity" />
+        <activity android:name=".locale.LocaleInfoActivity" />
+        <activity android:name=".view.ProgressActivity" />
+        <activity
+            android:name=".view.CoordinatorActivity"
+            android:label="@string/title_activity_coordinator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.ScrollingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- IPC 机制 -->
+        <activity android:name=".process.ProcessAActivity" />
+
+        <!-- 使用:命名进程，属于私有进程，不以: 开头则属于全局进程，其他应用可以通过ShareUid与它跑在同一个进程中 -->
+        <activity
+            android:name=".process.ProcessBActivity"
+            android:process=":processB" />
+        <activity android:name=".process.ProcessMainActivity" />
+
+        <!-- Messenger 用于进程间通信，串行 -->
+        <service
+            android:name=".process.messager.MessengerService"
+            android:process=":process_service" />
+
+        <activity android:name=".process.messager.MessengerActivity" />
+
+        <!-- AIDL 用于进程间通信， 可以远程调用方法， 支持并发 -->
+        <service
+            android:name=".process.aidlbook.BookManagerService"
+            android:process=":bookManager" />
+
+        <activity android:name=".process.aidlbook.BookManagerActivity" />
+        <activity android:name=".view.SpinnerActivity" />
+
+        <service
+            android:name=".process.binderpool.BinderPoolService"
+            android:process=":binderPool" />
+
+        <activity android:name=".process.binderpool.BinderPoolActivity" />
+        <activity android:name=".view.MultiTouchActivity" android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -47,6 +47,12 @@ public class BaseLaunchModeActivity extends AppCompatActivity {
         startClearTop(SingleTaskActivity.class);
     }
 
+    public void newTaskClearTask(View view) {
+        Intent intent = new Intent(this, StandardTwoActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
     public void startSingleInstanceClearTop(View view) {
         startClearTop(SingleInstanceActivity.class);
     }

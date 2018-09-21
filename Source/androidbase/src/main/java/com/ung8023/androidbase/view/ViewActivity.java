@@ -6,6 +6,7 @@ import com.ung8023.androidbase.view.define.LayoutActivity;
 import com.ung8023.androidbase.view.define.MeasureActivity;
 import com.ung8023.androidbase.view.define.ViewDrawActivity;
 import com.ung8023.androidbase.view.scroll.ScrollMainActivity;
+import com.ung8023.androidbase.view.text.TextViewMainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,7 @@ public class ViewActivity extends BaseMainActivity {
         return new ArrayList<ActivityEntity>(){
             {
                 add(new ActivityEntity("移除View", RemoveViewActivity.class));
-                add(new ActivityEntity("TextView显示", TextViewActivity.class));
+                add(new ActivityEntity("TextView显示", TextViewMainActivity.class));
                 add(new ActivityEntity("Ripple显示", RippleActivity.class));
                 add(new ActivityEntity("SearchView显示", SearchViewActivity.class));
                 add(new ActivityEntity("include显示", IncludeActivity.class));
@@ -31,6 +32,11 @@ public class ViewActivity extends BaseMainActivity {
                 add(new ActivityEntity("View的Layout过程", LayoutActivity.class));
                 add(new ActivityEntity("View的Draw过程", ViewDrawActivity.class));
                 add(new ActivityEntity("XML定义Shape", ShapeXmlActivity.class));
+                add(new ActivityEntity("Progress", ProgressActivity.class));
+                add(new ActivityEntity("Coordinator", CoordinatorActivity.class));
+                add(new ActivityEntity("CoordinatorScroll", ScrollingActivity.class));
+                add(new ActivityEntity("Spinner", SpinnerActivity.class));
+                add(new ActivityEntity("MultiTouch", MultiTouchActivity.class));
             }
         };
     }

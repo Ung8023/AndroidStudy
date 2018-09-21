@@ -18,6 +18,7 @@ public class DialogActivity extends BaseMainActivity {
         return new ArrayList<ActivityEntity>() {
             {
                 add(new ActivityEntity("ProgressDialog", ProgressDialogActivity.class));
+                add(new ActivityEntity("DateTimeDialog", DateTimeDialogActivity.class));
             }
         };
     }

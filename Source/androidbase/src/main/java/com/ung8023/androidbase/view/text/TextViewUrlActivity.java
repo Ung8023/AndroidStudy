@@ -1,4 +1,4 @@
-package com.ung8023.androidbase.view;
+package com.ung8023.androidbase.view.text;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.ung8023.androidbase.R;
 import com.ung8023.androidbase.utils.TransferUtils;
 
-public class TextViewActivity extends AppCompatActivity {
+public class TextViewUrlActivity extends AppCompatActivity {
 
 
     String url = "aAAAAAAAAAAAAAAA 343-1232342-2424 <a href=\"http://www.baidu.com asdasdasdasd\">这是一个字符串</a>";
@@ -24,7 +24,7 @@ public class TextViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_view);
+        setContentView(R.layout.activity_text_view_url);
 
         initView();
     }
